@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DataInput\a_example.txt" />
+    <None Remove="DataInput\b_read_on.txt" />
+    <None Remove="DataInput\c_incunabula.txt" />
+    <None Remove="DataInput\d_tough_choices.txt" />
+    <None Remove="DataInput\e_so_many_books.txt" />
+    <None Remove="DataInput\f_libraries_of_the_world.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DataInput\a_example.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DataInput\b_read_on.txt" />
+    <EmbeddedResource Include="DataInput\c_incunabula.txt" />
+    <EmbeddedResource Include="DataInput\d_tough_choices.txt" />
+    <EmbeddedResource Include="DataInput\e_so_many_books.txt" />
+    <EmbeddedResource Include="DataInput\f_libraries_of_the_world.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+</Project>
